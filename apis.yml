@@ -1,25 +1,98 @@
 aid: qlikview-com
+
 name: Qlik
-description: 'Qlik is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by accel) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.qlik.com/qlik-og-default.png
+
+description: 'Qlik provides analytics and data integration solutions that enable enterprises to turn data into trusted, AI‑ready insights. Its portfolio includes Qlik Cloud Analytics (SaaS) and Qlik Sense (on‑premises) for data visualization, real‑time data movement, and AI‑driven analytics. The company serves organizations across industries such as financial services, government, healthcare, and manufacturing.'
+
 url: https://raw.githubusercontent.com/api-evangelist/qlikview-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-25'
+
 modified: '2026-10-25'
+
 tags:
-- Company
-apis: []
+- Analytics
+- Business Intelligence
+- Data Integration
+- Cloud Analytics
+- Enterprise Software
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- accel
+
 common:
+- type: Plans
+  url: plans/qlikview-com-plans-pricing.yml
+- type: Authentication
+  url: authentication/qlikview-com-authentication.yml
+- type: LLMsTxt
+  url: llms/qlikview-com-llms.txt
+- type: Hosts
+  url: hosts/qlikview-com-hosts.yml
+- type: Vendors
+  url: vendors/qlikview-com-vendors.yml
+- type: SDKs
+  url: packages/qlikview-com-packages.yml
+- type: Packages
+  url: packages/qlikview-com-packages.yml
+- type: TrustCenter
+  url: https://www.qlik.com/us/company/trust
+- type: TermsOfService
+  url: https://www.qlik.com/us/legal/terms-of-use
+- type: Roadmap
+  url: https://www.qlik.com/us/roadmap
+- type: PrivacyPolicy
+  url: https://www.qlik.com/us/company/trust/privacy
+- type: Pricing
+  url: https://www.qlik.com/us/di/pricing
+- type: Newsroom
+  url: https://www.qlik.com/us/company/newsroom
+- type: Leadership
+  url: https://www.qlik.com/us/leadership
+- type: Blog
+  url: https://www.qlik.com/resources/blog
+- type: GettingStarted
+  url: https://help.qlik.com/en-US/onboarding
+- type: Documentation
+  url: https://help.qlik.com/
+- type: DomainSecurity
+  url: security/qlikview-com-domain-security.yml
 - type: Website
   url: http://www.qlikview.com
+
+apis: []
+
+x-backed-by:
+- accel
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: http://www.qlikview.com
+    status: 200
+x-enrichment:
+  date: '2026-10-25'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

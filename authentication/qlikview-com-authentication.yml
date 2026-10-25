@@ -1,0 +1,15 @@
+generated: '2026-10-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://help.qlik.com/en-US/onboarding/Content/Onboarding/home.htm
+sources:
+- https://help.qlik.com/en-US/onboarding/Content/Onboarding/home.htm
+- https://help.qlik.com/en-US/onboarding/Content/Onboarding/qlik-cloud-analytics-standard.htm
+- https://help.qlik.com/en-US/onboarding/Content/Onboarding/qlik-cloud-analytics-premium-enterprise.htm
+- https://help.qlik.com/en-US/onboarding/Content/Onboarding/qlik-sense-business-admins.htm
+description: Authentication for Qlik APIs uses API keys.
+schemes:
+- type: apiKey
+  name: API key
+  evidence: The developer role is needed if you want to generate or delete API keys, which are used for authentication.
+docs: https://help.qlik.com/en-US/onboarding/Content/Onboarding/home.htm

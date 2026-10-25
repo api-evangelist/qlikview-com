@@ -1,0 +1,11 @@
+generated: '2026-10-25'
+method: searched
+source: https://registry.npmjs.org/qlik
+packages:
+  - name: qlik
+    registry: npm
+    url: https://www.npmjs.com/package/qlik
+    official: true
+    version: 5.0.5
+    published: 2023-09-15
+    note: "Latest version from npm registry"

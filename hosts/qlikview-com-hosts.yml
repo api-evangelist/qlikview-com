@@ -1,0 +1,110 @@
+generated: '2026-10-25'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 2
+  other_domain: 6
+  platform: 0
+  roles:
+  - api
+  - docs
+  - marketing
+  - other
+  - website
+hosts:
+- host: api.qlik.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: qlik.com
+  role: api
+  relation: other-domain
+- host: api.qlikview.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: qlikview.com
+  role: api
+  relation: own
+- host: assets.qlik.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: qlik.com
+  role: other
+  relation: other-domain
+- host: help.qlik.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - GettingStarted
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: qlik.com
+  role: docs
+  relation: other-domain
+- host: pages.qlik.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: qlik.com
+  role: other
+  relation: other-domain
+- host: www.qlik.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - TrustCenter
+  - TermsOfService
+  - Roadmap
+  - PrivacyPolicy
+  - Pricing
+  - Newsroom
+  - Leadership
+  - Blog
+  serves: []
+  registrable_domain: qlik.com
+  role: marketing
+  relation: other-domain
+- host: www.qlikview.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - hosting
+  vendor: netlify
+  registrable_domain: qlikview.com
+  role: website
+  relation: own
+- host: www.stitchdata.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: stitchdata.com
+  role: other
+  relation: other-domain

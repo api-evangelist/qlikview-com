@@ -1,0 +1,19 @@
+generated: '2026-10-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.qlik.com/us/di/pricing
+sources:
+- https://www.qlik.com/us/di/pricing
+name: Qlik pricing
+audience: business-product
+pricing_basis: negotiated
+plans:
+- name: Starter
+  price_text: Contact Us
+- name: Standard
+  price_text: Contact Us
+- name: Premium
+  price_text: Contact Us
+- name: Enterprise
+  price_text: Contact Sales
+docs: https://www.qlik.com/us/di/pricing
